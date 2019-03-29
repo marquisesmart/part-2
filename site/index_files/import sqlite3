@@ -1,0 +1,14 @@
+import sqlite3
+
+connectionObject=sqlite3.connect('local.db')
+curObject = connectionObject.cursor()
+
+curObject.execute('CREATE TABLE  cs320students (class_account INTEGER, last_name TEXT, first_name TEXT);')
+
+
+curObject.execute('INSERT INTO cs320students VALUES (1332435434,'Smart','Marquise")')
+
+connectionObject.commit()
+connectionObject.close()
+
+

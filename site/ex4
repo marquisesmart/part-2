@@ -1,0 +1,8 @@
+def freqCount(sentence):
+    count = {}
+    for c in sentence:
+        count[c] = count.get(c,0) + 1
+    
+    return str(count)
+   
+printf(freqCount("marquise"))
